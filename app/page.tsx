@@ -968,28 +968,28 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                 </div>
 
                 {/* MOBILE CARD */}
-                <div className="flex md:hidden flex-col h-full bg-gradient-to-br from-[#111111]/90 to-[#0A0A0A]/90 backdrop-blur-2xl border border-[#E3D5BE]/20 rounded-[2.5rem] p-6 relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
-                    <div className="absolute top-5 right-5 bg-black/40 backdrop-blur-md rounded-[1rem] px-4 py-2 border border-[#E3D5BE]/40 shadow-[inset_0_0_10px_rgba(0,206,203,0.1)] flex items-center gap-2">
-                       <div className="w-1.5 h-1.5 rounded-full bg-[#E3D5BE] shadow-[0_0_8px_#E3D5BE]"></div>
-                       <span className="text-[9px] text-[#E3D5BE] font-black tracking-widest">EXPERT</span>
+                <div className="flex md:hidden flex-col h-full min-h-[220px] bg-[#1c1c1e]/80 backdrop-blur-3xl border border-white/10 rounded-[32px] p-6 relative shadow-[0_20px_40px_rgba(0,0,0,0.3)] overflow-hidden">
+                    <div className="absolute top-4 right-4 bg-white/5 backdrop-blur-md rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-white/10">
+                       <div className="w-1.5 h-1.5 rounded-full bg-[#E3D5BE]"></div>
+                       <span className="text-[8px] text-white/90 font-medium tracking-[0.2em] uppercase">Expert</span>
                     </div>
                     
-                    <div className="flex items-center gap-5 z-10 mt-2 mb-8">
-                        <div className="w-20 h-20 rounded-[1.5rem] p-[2px] bg-gradient-to-br from-[#E3D5BE] to-transparent shadow-[0_0_30px_rgba(0,206,203,0.3)] shrink-0">
-                          <img src={artist.image} alt={artist.name} className="w-full h-full rounded-[1.4rem] object-cover border border-[#111]" />
+                    <div className="flex items-center gap-4 z-10 mt-2 mb-6">
+                        <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 border border-white/20 bg-[#2c2c2e]">
+                          <img src={artist.image} alt={artist.name} className="w-full h-full object-cover" />
                         </div>
-                        <div>
-                            <h3 className="text-2xl font-serif text-white mb-1 drop-shadow-sm">{artist.name}</h3>
-                            <p className="text-[#E3D5BE] text-[8px] uppercase tracking-widest font-black leading-tight drop-shadow-[0_0_5px_rgba(0,206,203,0.4)]">{artist.title}</p>
+                        <div className="flex-1 pr-16">
+                            <h3 className="text-[22px] font-medium tracking-tight text-white mb-1">{artist.name}</h3>
+                            <p className="text-[#E3D5BE] text-[9px] uppercase tracking-widest font-normal leading-snug">{artist.title}</p>
                         </div>
                     </div>
 
-                    <div className="flex justify-between items-center w-full bg-[#1A1815] rounded-2xl p-4 border border-[#E3D5BE]/20 mt-auto z-10">
+                    <div className="flex justify-between items-center w-full bg-white/5 rounded-2xl p-4 border border-white/5 mt-auto z-10">
                         <div className="flex flex-col">
-                            <span className="text-[8px] uppercase text-gray-500 tracking-widest mb-1">{content.expLabel}</span>
-                            <span className="text-[#E3D5BE] font-serif text-sm drop-shadow-sm">{artist.exp}</span>
+                            <span className="text-[8px] uppercase text-gray-400 tracking-widest mb-1.5">{content.expLabel}</span>
+                            <span className="text-white font-medium text-xs tracking-wide">{artist.exp}</span>
                         </div>
-                        <a href="#" className="bg-gradient-to-r from-[#E3D5BE] to-[#D6C2A4] text-black px-5 py-2.5 rounded-[1rem] text-[9px] font-black uppercase tracking-widest active:scale-95 transition-transform shadow-[0_0_15px_rgba(0,206,203,0.3)]">
+                        <a href="#" className="bg-white text-[#1c1c1e] px-5 py-2 rounded-full text-[10px] font-semibold tracking-wide active:scale-95 transition-transform">
                             {content.viewProfile}
                         </a>
                     </div>
