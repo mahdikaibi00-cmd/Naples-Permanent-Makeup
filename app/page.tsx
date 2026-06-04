@@ -231,7 +231,7 @@ const ArtisticDivider = ({ src, title, subtitle, isVideo = false }: { src: strin
        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
           <motion.div 
             initial={{ height: 0 }} whileInView={{ height: "80px" }} transition={{ duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }}
-            className="w-[1px] bg-gradient-to-b from-transparent to-[#C5A059] mb-8 opacity-70 shadow-[0_0_10px_#C5A059]"
+            className="w-[1px] bg-gradient-to-b from-transparent to-[#D6C2A4] mb-8 opacity-70 shadow-[0_0_10px_#D6C2A4]"
           ></motion.div>
           
           <FadeUp>
@@ -241,14 +241,14 @@ const ArtisticDivider = ({ src, title, subtitle, isVideo = false }: { src: strin
           </FadeUp>
           
           <FadeUp delay={0.2}>
-            <p className="text-[9px] md:text-[11px] uppercase tracking-[0.4em] text-[#C5A059] font-bold drop-shadow-md">
+            <p className="text-[9px] md:text-[11px] uppercase tracking-[0.4em] text-[#D6C2A4] font-bold drop-shadow-md">
               {subtitle}
             </p>
           </FadeUp>
           
           <motion.div 
             initial={{ height: 0 }} whileInView={{ height: "80px" }} transition={{ duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }}
-            className="w-[1px] bg-gradient-to-t from-transparent to-[#C5A059] mt-8 opacity-70 shadow-[0_0_10px_#C5A059]"
+            className="w-[1px] bg-gradient-to-t from-transparent to-[#D6C2A4] mt-8 opacity-70 shadow-[0_0_10px_#D6C2A4]"
           ></motion.div>
        </div>
     </section>
@@ -262,8 +262,8 @@ const BeforeAfterSlider = ({ beforeImg, afterImg, label }: { beforeImg: string, 
       <img src={afterImg} alt="After" className="absolute inset-0 w-full h-full object-cover pointer-events-none" />
       <img src={beforeImg} alt="Before" className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }} />
       <div className="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)] pointer-events-none" style={{ left: `calc(${position}% - 2px)` }}>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg border border-[#C5A059]">
-           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A3803B" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M8 9l-4 4 4 4m8-8l4 4-4 4"/></svg>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg border border-[#D6C2A4]">
+           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C0A785" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M8 9l-4 4 4 4m8-8l4 4-4 4"/></svg>
         </div>
       </div>
       <input type="range" min="0" max="100" value={position} onChange={(e) => setPosition(Number(e.target.value))} className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-10" />
@@ -359,10 +359,10 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
   ];
 
   return (
-    <div className="bg-[#FAFAFA] text-[#2A2A2A] font-sans antialiased selection:bg-[#C5A059] selection:text-[#2A2A2A] overflow-x-hidden relative min-h-screen flex flex-col">
+    <div className="bg-[#FAFAFA] text-[#2A2A2A] font-sans antialiased selection:bg-[#D6C2A4] selection:text-[#2A2A2A] overflow-x-hidden relative min-h-screen flex flex-col">
       
       {/* FOMO HOOK BANNER */}
-      <div className="w-full bg-[#C5A059] text-[#1A1A1A] py-2.5 text-center text-[8px] md:text-[9px] uppercase tracking-[0.3em] font-bold z-[60] relative">
+      <div className="w-full bg-[#D6C2A4] text-[#1A1A1A] py-2.5 text-center text-[8px] md:text-[9px] uppercase tracking-[0.3em] font-bold z-[60] relative">
         {content.fomoText}
       </div>
 
@@ -399,10 +399,10 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         </div>
 
         <div className={`hidden lg:flex flex-1 justify-center items-center space-x-10 text-[10px] uppercase tracking-[0.2em] font-medium transition-colors duration-500 ${scrolled ? 'text-[#2A2A2A]' : 'text-white/90 drop-shadow-sm'}`}>
-          <a href="#services" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#A3803B] transition-colors">{content.navServices}</a>
-          <a href="#masterpieces" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#A3803B] transition-colors">{content.navPortfolio}</a>
-          <a href="#academy" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#A3803B] transition-colors">{content.navAcademy}</a>
-          <a href="#footer" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#A3803B] transition-colors">{content.navContact}</a>
+          <a href="#services" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#C0A785] transition-colors">{content.navServices}</a>
+          <a href="#masterpieces" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#C0A785] transition-colors">{content.navPortfolio}</a>
+          <a href="#academy" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#C0A785] transition-colors">{content.navAcademy}</a>
+          <a href="#footer" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="hover:text-[#C0A785] transition-colors">{content.navContact}</a>
         </div>
 
         <div className="hidden lg:flex flex-shrink-0 justify-end items-center gap-6">
@@ -413,7 +413,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
            </div>
            <a href={bookingLink} target="_blank" rel="noopener noreferrer"
               className={`px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold transition-all duration-500 shadow-sm hover:shadow-md hover:-translate-y-0.5
-              ${scrolled ? 'bg-[#2A2A2A] text-white hover:bg-[#C5A059] hover:text-[#1A1A1A]' : 'bg-white text-[#2A2A2A] hover:bg-[#C5A059]'}`}>
+              ${scrolled ? 'bg-[#2A2A2A] text-white hover:bg-[#D6C2A4] hover:text-[#1A1A1A]' : 'bg-white text-[#2A2A2A] hover:bg-[#D6C2A4]'}`}>
               {content.book}
            </a>
         </div>
@@ -423,14 +423,14 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-white/95 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center p-6">
-            <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-8 right-8 text-[#2A2A2A] p-2 hover:text-[#A3803B] transition-colors">
+            <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-8 right-8 text-[#2A2A2A] p-2 hover:text-[#C0A785] transition-colors">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
             <div className="flex flex-col items-center gap-8 text-[#2A2A2A] text-[12px] font-medium uppercase tracking-[0.3em]">
-              <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#A3803B]">{content.navServices}</a>
-              <a href="#masterpieces" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#A3803B]">{content.navPortfolio}</a>
-              <a href="#academy" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#A3803B]">{content.navAcademy}</a>
-              <a href="#footer" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#A3803B]">{content.navContact}</a>
+              <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#C0A785]">{content.navServices}</a>
+              <a href="#masterpieces" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#C0A785]">{content.navPortfolio}</a>
+              <a href="#academy" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#C0A785]">{content.navAcademy}</a>
+              <a href="#footer" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#C0A785]">{content.navContact}</a>
               <div className="flex items-center gap-2 mt-4 border border-[#EAE0C8] rounded-full p-1 bg-[#FDFBF7] shadow-inner">
                  <button onClick={() => {handleLangChange('EN'); setIsMobileMenuOpen(false);}} className={`px-5 py-2.5 rounded-full text-[10px] font-bold tracking-widest ${lang==='EN' ? 'bg-white shadow-sm text-[#2A2A2A]' : 'text-gray-400'}`}>EN</button>
                  <button onClick={() => {handleLangChange('ES'); setIsMobileMenuOpen(false);}} className={`px-5 py-2.5 rounded-full text-[10px] font-bold tracking-widest ${lang==='ES' ? 'bg-white shadow-sm text-[#2A2A2A]' : 'text-gray-400'}`}>ES</button>
@@ -447,7 +447,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         {/* Background Layer */}
         <div className="absolute inset-0 z-0 bg-[#1A1A1A]">
           <video src="/v1hero.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover object-center opacity-60 sepia-[0.2]" />
-          <div className="absolute inset-0 bg-black/50 z-10"></div>
+          <div className="absolute inset-0 bg-black/70 z-10"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.7)_100%)] z-10 opacity-90 pointer-events-none"></div>
         </div>
 
@@ -518,7 +518,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         <section className="relative z-20 bg-white md:rounded-t-[4rem] py-16 md:py-32 px-6 text-center border-b border-[#EAE0C8]">
             <div className="max-w-4xl mx-auto">
                <FadeUp>
-                  <p className="text-[#A3803B] font-serif italic text-xl md:text-2xl mb-8">
+                  <p className="text-[#C0A785] font-serif italic text-xl md:text-2xl mb-8">
                      {content.introHello}
                   </p>
                </FadeUp>
@@ -540,7 +540,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
           
           <div className="max-w-[1300px] mx-auto relative z-10">
             <FadeUp className="text-center mb-16 md:mb-20">
-              <h2 className="text-[10px] md:text-xs uppercase tracking-[0.4em] font-bold text-[#A3803B]">
+              <h2 className="text-[10px] md:text-xs uppercase tracking-[0.4em] font-bold text-[#C0A785]">
                 {content.transTitle}
               </h2>
             </FadeUp>
@@ -558,9 +558,9 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                   <div className="flex flex-col relative z-10 mb-8">
                      <h3 className="text-3xl md:text-4xl font-serif text-[#2A2A2A] flex items-center gap-3 mb-2">
                         {content.coreLipsTitle}
-                        <svg className="w-5 h-5 text-[#C5A059]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg className="w-5 h-5 text-[#D6C2A4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                      </h3>
-                     <span className="text-[10px] uppercase tracking-widest text-[#A3803B] font-bold">{content.srvFor} GLOW</span>
+                     <span className="text-[10px] uppercase tracking-widest text-[#C0A785] font-bold">{content.srvFor} GLOW</span>
                   </div>
                   
                   <p className="text-sm font-light text-gray-500 leading-relaxed mb-10 flex-grow relative z-10">
@@ -568,7 +568,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                     {content.coreLipsDesc}
                   </p>
                   
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="relative z-10 bg-[#2A2A2A] text-white px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold shadow-md hover:bg-[#C5A059] hover:text-[#1A1A1A] transition-all duration-300 w-max mt-auto active:scale-95">
+                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="relative z-10 bg-[#2A2A2A] text-white px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold shadow-md hover:bg-[#D6C2A4] hover:text-[#1A1A1A] transition-all duration-300 w-max mt-auto active:scale-95">
                     {content.srvBtn}
                   </a>
                 </div>
@@ -585,9 +585,9 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                   <div className="flex flex-col relative z-10 mb-8">
                      <h3 className="text-3xl md:text-4xl font-serif text-[#2A2A2A] flex items-center gap-3 mb-2">
                         {content.coreBrowsTitle}
-                        <svg className="w-5 h-5 text-[#C5A059]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg className="w-5 h-5 text-[#D6C2A4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                      </h3>
-                     <span className="text-[10px] uppercase tracking-widest text-[#A3803B] font-bold">{content.srvFor} ENHANCEMENT</span>
+                     <span className="text-[10px] uppercase tracking-widest text-[#C0A785] font-bold">{content.srvFor} ENHANCEMENT</span>
                   </div>
                   
                   <p className="text-sm font-light text-gray-500 leading-relaxed mb-10 flex-grow relative z-10">
@@ -595,7 +595,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                     {content.coreBrowsDesc}
                   </p>
                   
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="relative z-10 bg-[#2A2A2A] text-white px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold shadow-md hover:bg-[#C5A059] hover:text-[#1A1A1A] transition-all duration-300 w-max mt-auto active:scale-95">
+                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="relative z-10 bg-[#2A2A2A] text-white px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold shadow-md hover:bg-[#D6C2A4] hover:text-[#1A1A1A] transition-all duration-300 w-max mt-auto active:scale-95">
                     {content.srvBtn}
                   </a>
                 </div>
@@ -612,9 +612,9 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                   <div className="flex flex-col relative z-10 mb-8">
                      <h3 className="text-3xl md:text-4xl font-serif text-[#2A2A2A] flex items-center gap-3 mb-2">
                         {content.coreEyesTitle}
-                        <svg className="w-5 h-5 text-[#C5A059]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg className="w-5 h-5 text-[#D6C2A4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                      </h3>
-                     <span className="text-[10px] uppercase tracking-widest text-[#A3803B] font-bold">{content.srvFor} PERFECTION</span>
+                     <span className="text-[10px] uppercase tracking-widest text-[#C0A785] font-bold">{content.srvFor} PERFECTION</span>
                   </div>
                   
                   <p className="text-sm font-light text-gray-500 leading-relaxed mb-10 flex-grow relative z-10">
@@ -622,7 +622,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                     {content.coreEyesDesc}
                   </p>
                   
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="relative z-10 bg-[#2A2A2A] text-white px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold shadow-md hover:bg-[#C5A059] hover:text-[#1A1A1A] transition-all duration-300 w-max mt-auto active:scale-95">
+                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="relative z-10 bg-[#2A2A2A] text-white px-8 py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold shadow-md hover:bg-[#D6C2A4] hover:text-[#1A1A1A] transition-all duration-300 w-max mt-auto active:scale-95">
                     {content.srvBtn}
                   </a>
                 </div>
@@ -642,7 +642,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
             <div className="max-w-[1200px] mx-auto md:pb-10">
                 <div className="text-center mb-16 md:mb-24">
                   <FadeUp>
-                    <span className="text-[#A3803B] text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block">{content.killTitle}</span>
+                    <span className="text-[#C0A785] text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block">{content.killTitle}</span>
                     <h2 className="text-3xl md:text-5xl font-serif font-light text-[#2A2A2A] tracking-tight">{content.killSub}</h2>
                   </FadeUp>
                 </div>
@@ -659,14 +659,14 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                       </div>
                     </FadeUp>
                     <FadeUp delay={0.4}>
-                      <div className="bg-white rounded-[2rem] p-8 md:p-14 border-2 border-[#C5A059] shadow-[0_20px_50px_rgba(0,0,0,0.05)] flex flex-col h-full transform md:-translate-y-4">
+                      <div className="bg-white rounded-[2rem] p-8 md:p-14 border-2 border-[#D6C2A4] shadow-[0_20px_50px_rgba(0,0,0,0.05)] flex flex-col h-full transform md:-translate-y-4">
                           <h3 className="text-[#2A2A2A] font-serif text-2xl mb-8 border-b border-[#EAE0C8] pb-6">{content.killNilTitle}</h3>
                           <ul className="space-y-6 text-sm font-light text-gray-600 tracking-[0.05em] leading-relaxed flex-grow">
-                              <li className="flex gap-4 items-start"><span className="text-[#A3803B] mt-1 font-bold">✓</span> {content.killNil1}</li>
-                              <li className="flex gap-4 items-start"><span className="text-[#A3803B] mt-1 font-bold">✓</span> {content.killNil2}</li>
-                              <li className="flex gap-4 items-start"><span className="text-[#A3803B] mt-1 font-bold">✓</span> {content.killNil3}</li>
+                              <li className="flex gap-4 items-start"><span className="text-[#C0A785] mt-1 font-bold">✓</span> {content.killNil1}</li>
+                              <li className="flex gap-4 items-start"><span className="text-[#C0A785] mt-1 font-bold">✓</span> {content.killNil2}</li>
+                              <li className="flex gap-4 items-start"><span className="text-[#C0A785] mt-1 font-bold">✓</span> {content.killNil3}</li>
                           </ul>
-                          <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="mt-10 bg-[#2A2A2A] text-white px-8 py-4 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.2em] font-bold text-center shadow-md hover:bg-[#C5A059] hover:text-[#1A1A1A] transition-all">
+                          <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="mt-10 bg-[#2A2A2A] text-white px-8 py-4 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.2em] font-bold text-center shadow-md hover:bg-[#D6C2A4] hover:text-[#1A1A1A] transition-all">
                               {content.killBtn}
                           </a>
                       </div>
@@ -686,32 +686,32 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                 </FadeUp>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
                     <FadeUp delay={0.1}>
-                      <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 border border-[#EAE0C8] hover:border-[#C5A059] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 h-full flex flex-col shadow-sm">
+                      <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 border border-[#EAE0C8] hover:border-[#D6C2A4] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 h-full flex flex-col shadow-sm">
                           <h4 className="text-[#2A2A2A] text-2xl font-serif mb-4">{content.srvOmbreTitle}</h4>
-                          <div className="w-8 h-px bg-[#C5A059] mb-6"></div>
+                          <div className="w-8 h-px bg-[#D6C2A4] mb-6"></div>
                           <p className="text-gray-500 font-light text-sm tracking-wide leading-relaxed mb-8 flex-grow">Experience ultimate rejuvenation. Choose from the Melt Away Facial, Anti Aging Facial with Argireline, or the customized European Facial. Featuring dermaplaning, Bio Collagen, and LED therapy.</p>
                           <div className="flex justify-between items-center border-t border-[#EAE0C8] pt-6">
-                             <span className="text-[9px] uppercase tracking-widest text-[#A3803B] font-bold">{content.srvOmbreDur}</span>
+                             <span className="text-[9px] uppercase tracking-widest text-[#C0A785] font-bold">{content.srvOmbreDur}</span>
                           </div>
                       </div>
                     </FadeUp>
                     <FadeUp delay={0.3}>
-                      <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 border border-[#EAE0C8] hover:border-[#C5A059] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 h-full flex flex-col shadow-sm">
+                      <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 border border-[#EAE0C8] hover:border-[#D6C2A4] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 h-full flex flex-col shadow-sm">
                           <h4 className="text-[#2A2A2A] text-2xl font-serif mb-4">{content.srvMicroTitle}</h4>
-                          <div className="w-8 h-px bg-[#C5A059] mb-6"></div>
+                          <div className="w-8 h-px bg-[#D6C2A4] mb-6"></div>
                           <p className="text-gray-500 font-light text-sm tracking-wide leading-relaxed mb-8 flex-grow">Enhance your natural features with expert Permanent Makeup for Brows, Lip Blush, and Permanent Eyeliner. Tailored techniques to suit your desired glamorous or natural look.</p>
                           <div className="flex justify-between items-center border-t border-[#EAE0C8] pt-6">
-                             <span className="text-[9px] uppercase tracking-widest text-[#A3803B] font-bold">{content.srvMicroDur}</span>
+                             <span className="text-[9px] uppercase tracking-widest text-[#C0A785] font-bold">{content.srvMicroDur}</span>
                           </div>
                       </div>
                     </FadeUp>
                     <FadeUp delay={0.5}>
-                      <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 border border-[#EAE0C8] hover:border-[#C5A059] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 h-full flex flex-col shadow-sm">
+                      <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 border border-[#EAE0C8] hover:border-[#D6C2A4] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 h-full flex flex-col shadow-sm">
                           <h4 className="text-[#2A2A2A] text-2xl font-serif mb-4">{content.srvLipsTitle}</h4>
-                          <div className="w-8 h-px bg-[#C5A059] mb-6"></div>
+                          <div className="w-8 h-px bg-[#D6C2A4] mb-6"></div>
                           <p className="text-gray-500 font-light text-sm tracking-wide leading-relaxed mb-8 flex-grow">Advanced aesthetic treatments including 4% Pure Retinol Peels, PCA SKIN Chemical Peels, Plasma Pen tightening, Skin Tag removal, and Nanoneedling for optimal skin function.</p>
                           <div className="flex justify-between items-center border-t border-[#EAE0C8] pt-6">
-                             <span className="text-[9px] uppercase tracking-widest text-[#A3803B] font-bold">{content.srvLipsDur}</span>
+                             <span className="text-[9px] uppercase tracking-widest text-[#C0A785] font-bold">{content.srvLipsDur}</span>
                           </div>
                       </div>
                     </FadeUp>
@@ -727,7 +727,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
 
             <div className="max-w-[1300px] mx-auto px-6 lg:px-12 relative z-10">
                 <FadeUp className="text-center mb-16 md:mb-24">
-                  <span className="text-[#A3803B] text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block">Personalized For You</span>
+                  <span className="text-[#C0A785] text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block">Personalized For You</span>
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2A2A2A] tracking-tight">{content.decTitle}</h2>
                   <p className="text-gray-500 font-light tracking-[0.05em] mt-6 max-w-lg mx-auto">{content.decSub}</p>
                 </FadeUp>
@@ -737,8 +737,8 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                    <div className="w-full lg:w-1/2 flex flex-col gap-10 md:gap-14">
                       <div>
                          <div className="flex items-center gap-4 mb-6 md:mb-8 ml-2">
-                            <div className="w-8 h-px bg-[#C5A059]"></div>
-                            <span className="block text-[10px] uppercase tracking-[0.3em] text-[#A3803B] font-bold">{content.decSkin}</span>
+                            <div className="w-8 h-px bg-[#D6C2A4]"></div>
+                            <span className="block text-[10px] uppercase tracking-[0.3em] text-[#C0A785] font-bold">{content.decSkin}</span>
                          </div>
                          <div className="flex p-2 md:p-2.5 bg-white rounded-[2rem] border border-[#EAE0C8] shadow-sm relative">
                             <button 
@@ -759,8 +759,8 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
 
                       <div>
                          <div className="flex items-center gap-4 mb-6 md:mb-8 ml-2">
-                            <div className="w-8 h-px bg-[#C5A059]"></div>
-                            <span className="block text-[10px] uppercase tracking-[0.3em] text-[#A3803B] font-bold">{content.decGoal}</span>
+                            <div className="w-8 h-px bg-[#D6C2A4]"></div>
+                            <span className="block text-[10px] uppercase tracking-[0.3em] text-[#C0A785] font-bold">{content.decGoal}</span>
                          </div>
                          <div className="flex p-2 md:p-2.5 bg-white rounded-[2rem] border border-[#EAE0C8] shadow-sm relative">
                             <button 
@@ -783,7 +783,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                    <div className="w-full lg:w-1/2">
                       <div className="bg-[#1A1A1A] rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-[#2A2A2A] relative overflow-hidden h-full flex flex-col justify-center min-h-[380px]">
                          
-                         <div className="absolute top-[-20%] right-[-20%] w-[60%] h-[60%] bg-[#C5A059] blur-[100px] opacity-10 rounded-full pointer-events-none"></div>
+                         <div className="absolute top-[-20%] right-[-20%] w-[60%] h-[60%] bg-[#D6C2A4] blur-[100px] opacity-10 rounded-full pointer-events-none"></div>
 
                          <AnimatePresence mode="wait">
                             <motion.div
@@ -795,7 +795,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                className="relative z-10 flex flex-col h-full"
                             >
                                <div className="mb-8">
-                                  <span className="inline-block px-4 py-1.5 rounded-full border border-[#C5A059]/30 bg-[#C5A059]/10 text-[#C5A059] text-[9px] uppercase tracking-[0.3em] font-bold">
+                                  <span className="inline-block px-4 py-1.5 rounded-full border border-[#D6C2A4]/30 bg-[#D6C2A4]/10 text-[#D6C2A4] text-[9px] uppercase tracking-[0.3em] font-bold">
                                      {content.decRec}
                                   </span>
                                </div>
@@ -809,7 +809,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                       return (
                                           <div className="flex-grow">
                                               <h3 className="text-3xl md:text-4xl font-serif text-white mb-6 leading-tight">{title}</h3>
-                                              <div className="w-12 h-px bg-gradient-to-r from-[#C5A059] to-transparent mb-6"></div>
+                                              <div className="w-12 h-px bg-gradient-to-r from-[#D6C2A4] to-transparent mb-6"></div>
                                               <p className="text-gray-300 font-light text-sm md:text-base leading-relaxed tracking-wide">{desc}</p>
                                           </div>
                                       )
@@ -818,7 +818,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                })()}
 
                                <div className="mt-10 md:mt-12 pt-8 border-t border-white/10">
-                                   <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#C5A059] text-[#1A1A1A] px-8 py-4 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-white transition-all duration-300 active:scale-95 w-full sm:w-auto shadow-md">
+                                   <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#D6C2A4] text-[#1A1A1A] px-8 py-4 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-white transition-all duration-300 active:scale-95 w-full sm:w-auto shadow-md">
                                       {content.decBtn}
                                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
                                    </a>
@@ -840,14 +840,14 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         <section id="masterpieces" className="pt-24 pb-32 md:pt-48 md:pb-48 px-6 lg:px-12 text-center relative z-20 bg-[#FAFAFA] md:-mt-32 md:rounded-t-[4rem] shadow-[0_-20px_40px_rgba(0,0,0,0.05)]">
             <div className="max-w-[1000px] mx-auto">
                <FadeUp>
-                 <span className="text-[#A3803B] text-[10px] uppercase tracking-[0.3em] font-bold mb-4 block">Visual Proof</span>
+                 <span className="text-[#C0A785] text-[10px] uppercase tracking-[0.3em] font-bold mb-4 block">Visual Proof</span>
                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extralight text-[#2A2A2A] tracking-tight mb-12 md:mb-16">{content.baTitle}</h2>
                </FadeUp>
                <FadeUp delay={0.2}>
                   <BeforeAfterSlider beforeImg="/before.jpg" afterImg="/after.jpg" label={content.baDrag} />
                </FadeUp>
                <FadeUp delay={0.4} className="mt-12 md:mt-16">
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-auto bg-[#2A2A2A] text-white px-12 py-5 rounded-[1.5rem] md:rounded-full text-[10px] uppercase tracking-[0.3em] font-bold hover:bg-[#C5A059] hover:text-[#1A1A1A] shadow-md transition-all">
+                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-auto bg-[#2A2A2A] text-white px-12 py-5 rounded-[1.5rem] md:rounded-full text-[10px] uppercase tracking-[0.3em] font-bold hover:bg-[#D6C2A4] hover:text-[#1A1A1A] shadow-md transition-all">
                       {content.heroBtn1}
                   </a>
                </FadeUp>
@@ -862,19 +862,19 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
               </FadeUp>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-[#EAE0C8]">
                  <FadeUp delay={0.1} className="flex flex-col">
-                    <span className="text-4xl md:text-5xl font-serif text-[#C5A059] mb-3">{content.auth1}</span>
+                    <span className="text-4xl md:text-5xl font-serif text-[#D6C2A4] mb-3">{content.auth1}</span>
                     <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-gray-500">{content.auth1Sub}</span>
                  </FadeUp>
                  <FadeUp delay={0.2} className="flex flex-col">
-                    <span className="text-4xl md:text-5xl font-serif text-[#C5A059] mb-3">{content.auth2}</span>
+                    <span className="text-4xl md:text-5xl font-serif text-[#D6C2A4] mb-3">{content.auth2}</span>
                     <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-gray-500">{content.auth2Sub}</span>
                  </FadeUp>
                  <FadeUp delay={0.3} className="flex flex-col mt-4 md:mt-0">
-                    <span className="text-4xl md:text-5xl font-serif text-[#C5A059] mb-3">{content.auth3}</span>
+                    <span className="text-4xl md:text-5xl font-serif text-[#D6C2A4] mb-3">{content.auth3}</span>
                     <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-gray-500">{content.auth3Sub}</span>
                  </FadeUp>
                  <FadeUp delay={0.4} className="flex flex-col mt-4 md:mt-0">
-                    <span className="text-4xl md:text-5xl font-serif text-[#C5A059] mb-3">{content.auth4}</span>
+                    <span className="text-4xl md:text-5xl font-serif text-[#D6C2A4] mb-3">{content.auth4}</span>
                     <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-gray-500">{content.auth4Sub}</span>
                  </FadeUp>
               </div>
@@ -890,7 +890,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
             <FadeUp>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-normal text-[#2A2A2A] tracking-tight leading-[1.3] md:leading-tight">
                 <span className="block mb-2 md:mb-0 md:inline">{content.expTitle1}</span>
-                <span className="italic font-light text-[#A3803B] block md:inline md:ml-3">{content.expTitle2}</span>
+                <span className="italic font-light text-[#C0A785] block md:inline md:ml-3">{content.expTitle2}</span>
               </h2>
             </FadeUp>
             <FadeUp delay={0.2}>
@@ -918,20 +918,20 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         <MobileCurvedDivider colorClass="text-[#FAFAFA] bg-[#FFFFFF]" />
 
         {/* MEET THE MASTERS */}
-        <section className="w-full pt-20 pb-32 md:pt-32 md:pb-48 bg-[#050505] relative overflow-hidden flex flex-col md:rounded-t-[4rem] border-t border-[#D4AF37]/20 z-20 shadow-[inset_0_20px_50px_rgba(0,206,203,0.05)]">
+        <section className="w-full pt-20 pb-32 md:pt-32 md:pb-48 bg-[#050505] relative overflow-hidden flex flex-col md:rounded-t-[4rem] border-t border-[#E3D5BE]/20 z-20 shadow-[inset_0_20px_50px_rgba(0,206,203,0.05)]">
           
-          <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#D4AF37]/15 blur-[150px] rounded-full pointer-events-none mix-blend-screen" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-[#D4AF37]/10 blur-[150px] rounded-full pointer-events-none mix-blend-screen" />
+          <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#E3D5BE]/15 blur-[150px] rounded-full pointer-events-none mix-blend-screen" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-[#E3D5BE]/10 blur-[150px] rounded-full pointer-events-none mix-blend-screen" />
           
           <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10 mb-12 md:mb-16 text-left">
             <FadeUp>
-              <span className="inline-block text-[#E3C982] font-bold tracking-[0.2em] text-[9px] md:text-[10px] uppercase mb-6 drop-shadow-[0_0_8px_rgba(0,206,203,0.6)] py-1.5 px-5 border border-[#D4AF37]/40 rounded-full bg-[#D4AF37]/10 shadow-[0_0_15px_rgba(0,206,203,0.1)]">
+              <span className="inline-block text-[#E3D5BE] font-bold tracking-[0.2em] text-[9px] md:text-[10px] uppercase mb-6 drop-shadow-[0_0_8px_rgba(0,206,203,0.6)] py-1.5 px-5 border border-[#E3D5BE]/40 rounded-full bg-[#E3D5BE]/10 shadow-[0_0_15px_rgba(0,206,203,0.1)]">
                 {content.teamSub}
               </span>
             </FadeUp>
             <FadeUp delay={0.2}>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extralight text-white tracking-tight leading-tight mb-6">
-                {content.teamTitle1} <span className="font-light italic text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#E3C982] drop-shadow-[0_0_10px_rgba(0,206,203,0.3)]">{content.teamTitle2}</span>
+                {content.teamTitle1} <span className="font-light italic text-transparent bg-clip-text bg-gradient-to-r from-[#E3D5BE] to-[#E3D5BE] drop-shadow-[0_0_10px_rgba(0,206,203,0.3)]">{content.teamTitle2}</span>
               </h2>
               <p className="max-w-2xl text-gray-400 font-light text-sm tracking-[0.05em] leading-relaxed">
                 {content.teamDesc}
@@ -947,49 +947,49 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
               <div key={index} className="relative shrink-0 w-[300px] md:w-[340px] snap-center group">
                 
                 {/* DESKTOP CARD */}
-                <div className="hidden md:flex flex-col items-center text-center rounded-[2.5rem] bg-gradient-to-b from-[#111111] to-[#0A0A0A] border border-white/5 hover:border-[#D4AF37]/40 hover:shadow-[0_0_40px_rgba(0,206,203,0.15)] shadow-xl transition-all duration-500 p-8 h-full">
-                    <div className="relative w-40 h-40 rounded-full p-[2px] bg-gradient-to-b from-[#D4AF37] to-transparent mb-6 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_30px_rgba(0,206,203,0.2)]">
+                <div className="hidden md:flex flex-col items-center text-center rounded-[2.5rem] bg-gradient-to-b from-[#111111] to-[#0A0A0A] border border-white/5 hover:border-[#E3D5BE]/40 hover:shadow-[0_0_40px_rgba(0,206,203,0.15)] shadow-xl transition-all duration-500 p-8 h-full">
+                    <div className="relative w-40 h-40 rounded-full p-[2px] bg-gradient-to-b from-[#E3D5BE] to-transparent mb-6 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_30px_rgba(0,206,203,0.2)]">
                       <div className="w-full h-full rounded-full overflow-hidden border-4 border-[#050505] bg-[#050505]">
                         <img src={artist.image} alt={artist.name} className="w-full h-full object-cover sepia-[0.2] group-hover:sepia-0 transition-all duration-700" />
                       </div>
                     </div>
-                    <h3 className="text-3xl font-serif text-white mb-2 tracking-wide group-hover:text-[#E3C982] transition-colors duration-300 drop-shadow-sm">{artist.name}</h3>
-                    <p className="text-[#D4AF37] text-[10px] uppercase tracking-widest font-bold mb-8 drop-shadow-[0_0_5px_rgba(0,206,203,0.3)]">{artist.title}</p>
-                    <div className="w-full bg-[#1A1815] rounded-2xl flex justify-between items-center p-4 border border-[#D4AF37]/20 mt-auto">
-                       <div className="flex flex-col items-center flex-1 border-r border-[#D4AF37]/20">
+                    <h3 className="text-3xl font-serif text-white mb-2 tracking-wide group-hover:text-[#E3D5BE] transition-colors duration-300 drop-shadow-sm">{artist.name}</h3>
+                    <p className="text-[#E3D5BE] text-[10px] uppercase tracking-widest font-bold mb-8 drop-shadow-[0_0_5px_rgba(0,206,203,0.3)]">{artist.title}</p>
+                    <div className="w-full bg-[#1A1815] rounded-2xl flex justify-between items-center p-4 border border-[#E3D5BE]/20 mt-auto">
+                       <div className="flex flex-col items-center flex-1 border-r border-[#E3D5BE]/20">
                           <span className="text-[8px] uppercase tracking-widest text-gray-500 mb-1">{content.expLabel}</span>
-                          <span className="text-base font-serif text-[#E3C982]">{artist.exp}</span>
+                          <span className="text-base font-serif text-[#E3D5BE]">{artist.exp}</span>
                        </div>
                        <div className="flex flex-col items-center flex-1">
                           <span className="text-[8px] uppercase tracking-widest text-gray-500 mb-1">{content.procLabel}</span>
-                          <span className="text-base font-serif text-[#E3C982]">{artist.proc}</span>
+                          <span className="text-base font-serif text-[#E3D5BE]">{artist.proc}</span>
                        </div>
                     </div>
                 </div>
 
                 {/* MOBILE CARD */}
-                <div className="flex md:hidden flex-col h-full bg-gradient-to-br from-[#111111]/90 to-[#0A0A0A]/90 backdrop-blur-2xl border border-[#D4AF37]/20 rounded-[2.5rem] p-6 relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
-                    <div className="absolute top-5 right-5 bg-black/40 backdrop-blur-md rounded-[1rem] px-4 py-2 border border-[#D4AF37]/40 shadow-[inset_0_0_10px_rgba(0,206,203,0.1)] flex items-center gap-2">
-                       <div className="w-1.5 h-1.5 rounded-full bg-[#E3C982] shadow-[0_0_8px_#E3C982]"></div>
-                       <span className="text-[9px] text-[#E3C982] font-black tracking-widest">EXPERT</span>
+                <div className="flex md:hidden flex-col h-full bg-gradient-to-br from-[#111111]/90 to-[#0A0A0A]/90 backdrop-blur-2xl border border-[#E3D5BE]/20 rounded-[2.5rem] p-6 relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
+                    <div className="absolute top-5 right-5 bg-black/40 backdrop-blur-md rounded-[1rem] px-4 py-2 border border-[#E3D5BE]/40 shadow-[inset_0_0_10px_rgba(0,206,203,0.1)] flex items-center gap-2">
+                       <div className="w-1.5 h-1.5 rounded-full bg-[#E3D5BE] shadow-[0_0_8px_#E3D5BE]"></div>
+                       <span className="text-[9px] text-[#E3D5BE] font-black tracking-widest">EXPERT</span>
                     </div>
                     
                     <div className="flex items-center gap-5 z-10 mt-2 mb-8">
-                        <div className="w-20 h-20 rounded-[1.5rem] p-[2px] bg-gradient-to-br from-[#D4AF37] to-transparent shadow-[0_0_30px_rgba(0,206,203,0.3)] shrink-0">
+                        <div className="w-20 h-20 rounded-[1.5rem] p-[2px] bg-gradient-to-br from-[#E3D5BE] to-transparent shadow-[0_0_30px_rgba(0,206,203,0.3)] shrink-0">
                           <img src={artist.image} alt={artist.name} className="w-full h-full rounded-[1.4rem] object-cover border border-[#111]" />
                         </div>
                         <div>
                             <h3 className="text-2xl font-serif text-white mb-1 drop-shadow-sm">{artist.name}</h3>
-                            <p className="text-[#D4AF37] text-[8px] uppercase tracking-widest font-black leading-tight drop-shadow-[0_0_5px_rgba(0,206,203,0.4)]">{artist.title}</p>
+                            <p className="text-[#E3D5BE] text-[8px] uppercase tracking-widest font-black leading-tight drop-shadow-[0_0_5px_rgba(0,206,203,0.4)]">{artist.title}</p>
                         </div>
                     </div>
 
-                    <div className="flex justify-between items-center w-full bg-[#1A1815] rounded-2xl p-4 border border-[#D4AF37]/20 mt-auto z-10">
+                    <div className="flex justify-between items-center w-full bg-[#1A1815] rounded-2xl p-4 border border-[#E3D5BE]/20 mt-auto z-10">
                         <div className="flex flex-col">
                             <span className="text-[8px] uppercase text-gray-500 tracking-widest mb-1">{content.expLabel}</span>
-                            <span className="text-[#E3C982] font-serif text-sm drop-shadow-sm">{artist.exp}</span>
+                            <span className="text-[#E3D5BE] font-serif text-sm drop-shadow-sm">{artist.exp}</span>
                         </div>
-                        <a href="#" className="bg-gradient-to-r from-[#D4AF37] to-[#008B8B] text-black px-5 py-2.5 rounded-[1rem] text-[9px] font-black uppercase tracking-widest active:scale-95 transition-transform shadow-[0_0_15px_rgba(0,206,203,0.3)]">
+                        <a href="#" className="bg-gradient-to-r from-[#E3D5BE] to-[#D6C2A4] text-black px-5 py-2.5 rounded-[1rem] text-[9px] font-black uppercase tracking-widest active:scale-95 transition-transform shadow-[0_0_15px_rgba(0,206,203,0.3)]">
                             {content.viewProfile}
                         </a>
                     </div>
@@ -1001,10 +1001,10 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
           </div>
 
           <div className="hidden md:flex relative z-10 justify-center gap-4 mt-8">
-            <button onClick={() => docRef.current?.scrollBy({ left: -340, behavior: 'smooth' })} className="w-12 h-12 rounded-xl bg-[#111111] border border-[#D4AF37]/40 hover:bg-[#D4AF37] hover:border-[#D4AF37] flex items-center justify-center text-white hover:text-black transition-all shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_20px_rgba(0,206,203,0.5)] active:scale-95 group">
+            <button onClick={() => docRef.current?.scrollBy({ left: -340, behavior: 'smooth' })} className="w-12 h-12 rounded-xl bg-[#111111] border border-[#E3D5BE]/40 hover:bg-[#E3D5BE] hover:border-[#E3D5BE] flex items-center justify-center text-white hover:text-black transition-all shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_20px_rgba(0,206,203,0.5)] active:scale-95 group">
               <svg className="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
             </button>
-            <button onClick={() => docRef.current?.scrollBy({ left: 340, behavior: 'smooth' })} className="w-12 h-12 rounded-xl bg-[#111111] border border-[#D4AF37]/40 hover:bg-[#D4AF37] hover:border-[#D4AF37] flex items-center justify-center text-white hover:text-black transition-all shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_20px_rgba(0,206,203,0.5)] active:scale-95 group">
+            <button onClick={() => docRef.current?.scrollBy({ left: 340, behavior: 'smooth' })} className="w-12 h-12 rounded-xl bg-[#111111] border border-[#E3D5BE]/40 hover:bg-[#E3D5BE] hover:border-[#E3D5BE] flex items-center justify-center text-white hover:text-black transition-all shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_20px_rgba(0,206,203,0.5)] active:scale-95 group">
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
             </button>
           </div>
@@ -1014,15 +1014,15 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         <section className="py-24 md:py-40 overflow-hidden relative bg-[#FAFAFA] z-20 md:pb-48 md:rounded-t-[4rem] md:-mt-24 shadow-[0_-20px_50px_rgba(0,0,0,0.02)] border-b border-[#EAE0C8]">
             
             {/* Ambient Background Glows */}
-            <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-gradient-to-br from-[#C5A059]/20 to-transparent blur-[120px] rounded-full pointer-events-none z-0" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-gradient-to-tl from-[#A3803B]/10 to-transparent blur-[100px] rounded-full pointer-events-none z-0" />
+            <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-gradient-to-br from-[#D6C2A4]/20 to-transparent blur-[120px] rounded-full pointer-events-none z-0" />
+            <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-gradient-to-tl from-[#C0A785]/10 to-transparent blur-[100px] rounded-full pointer-events-none z-0" />
 
             <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-16 md:mb-24 text-center relative z-10">
                 <FadeUp>
-                    <span className="inline-flex items-center gap-3 text-[#A3803B] text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-6 bg-white px-6 py-2.5 rounded-full border border-[#EAE0C8] shadow-sm">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" className="text-[#C5A059]"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span className="inline-flex items-center gap-3 text-[#C0A785] text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold mb-6 bg-white px-6 py-2.5 rounded-full border border-[#EAE0C8] shadow-sm">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" className="text-[#D6C2A4]"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         {content.revTitle}
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" className="text-[#C5A059]"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" className="text-[#D6C2A4]"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </span>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2A2A2A] tracking-tight">Words of Radiance</h2>
                 </FadeUp>
@@ -1040,17 +1040,17 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                   <div className="absolute top-4 left-8 text-[140px] font-serif text-[#F9F8F6] leading-none z-0 pointer-events-none group-hover:scale-110 group-hover:text-[#FDFBF7] transition-all duration-700 font-black tracking-tighter">"</div>
                                   <div className="flex gap-1.5 mb-8 relative z-10">
                                       {[1,2,3,4,5].map((star) => (
-                                          <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#C5A059] drop-shadow-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                          <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#D6C2A4] drop-shadow-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                       ))}
                                   </div>
                                   <p className="text-[#2A2A2A] font-serif text-lg md:text-2xl leading-relaxed mb-10 relative z-10 italic">
                                       {content.rev1}
                                   </p>
                                   <div className="flex flex-col items-center gap-3 relative z-10 mt-auto">
-                                      <div className="w-10 h-[1px] bg-[#C5A059] mb-1"></div>
+                                      <div className="w-10 h-[1px] bg-[#D6C2A4] mb-1"></div>
                                       <span className="text-[#2A2A2A] text-[11px] md:text-[12px] uppercase tracking-[0.3em] font-bold">Demetria</span>
-                                      <span className="text-[#A3803B] text-[8px] md:text-[9px] uppercase tracking-widest font-medium flex items-center gap-1.5">
-                                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-[#C5A059]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                      <span className="text-[#C0A785] text-[8px] md:text-[9px] uppercase tracking-widest font-medium flex items-center gap-1.5">
+                                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-[#D6C2A4]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                                           Verified Guest
                                       </span>
                                   </div>
@@ -1061,17 +1061,17 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                   <div className="absolute top-4 left-8 text-[140px] font-serif text-[#F9F8F6] leading-none z-0 pointer-events-none group-hover:scale-110 group-hover:text-[#FDFBF7] transition-all duration-700 font-black tracking-tighter">"</div>
                                   <div className="flex gap-1.5 mb-8 relative z-10">
                                       {[1,2,3,4,5].map((star) => (
-                                          <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#C5A059] drop-shadow-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                          <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#D6C2A4] drop-shadow-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                       ))}
                                   </div>
                                   <p className="text-[#2A2A2A] font-serif text-lg md:text-2xl leading-relaxed mb-10 relative z-10 italic">
                                       {content.rev2}
                                   </p>
                                   <div className="flex flex-col items-center gap-3 relative z-10 mt-auto">
-                                      <div className="w-10 h-[1px] bg-[#C5A059] mb-1"></div>
+                                      <div className="w-10 h-[1px] bg-[#D6C2A4] mb-1"></div>
                                       <span className="text-[#2A2A2A] text-[11px] md:text-[12px] uppercase tracking-[0.3em] font-bold">Jennifer</span>
-                                      <span className="text-[#A3803B] text-[8px] md:text-[9px] uppercase tracking-widest font-medium flex items-center gap-1.5">
-                                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-[#C5A059]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                      <span className="text-[#C0A785] text-[8px] md:text-[9px] uppercase tracking-widest font-medium flex items-center gap-1.5">
+                                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-[#D6C2A4]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                                           Verified Guest
                                       </span>
                                   </div>
@@ -1082,17 +1082,17 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                   <div className="absolute top-4 left-8 text-[140px] font-serif text-[#F9F8F6] leading-none z-0 pointer-events-none group-hover:scale-110 group-hover:text-[#FDFBF7] transition-all duration-700 font-black tracking-tighter">"</div>
                                   <div className="flex gap-1.5 mb-8 relative z-10">
                                       {[1,2,3,4,5].map((star) => (
-                                          <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#C5A059] drop-shadow-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                          <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#D6C2A4] drop-shadow-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                       ))}
                                   </div>
                                   <p className="text-[#2A2A2A] font-serif text-lg md:text-2xl leading-relaxed mb-10 relative z-10 italic">
                                       {content.rev3}
                                   </p>
                                   <div className="flex flex-col items-center gap-3 relative z-10 mt-auto">
-                                      <div className="w-10 h-[1px] bg-[#C5A059] mb-1"></div>
+                                      <div className="w-10 h-[1px] bg-[#D6C2A4] mb-1"></div>
                                       <span className="text-[#2A2A2A] text-[11px] md:text-[12px] uppercase tracking-[0.3em] font-bold">Christa</span>
-                                      <span className="text-[#A3803B] text-[8px] md:text-[9px] uppercase tracking-widest font-medium flex items-center gap-1.5">
-                                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-[#C5A059]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                      <span className="text-[#C0A785] text-[8px] md:text-[9px] uppercase tracking-widest font-medium flex items-center gap-1.5">
+                                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-[#D6C2A4]"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                                           Verified Guest
                                       </span>
                                   </div>
@@ -1114,8 +1114,8 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                         className="group relative inline-flex items-center justify-center gap-4 bg-white text-[#2A2A2A] px-10 py-5 rounded-full text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-bold shadow-[0_15px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_rgba(48,213,200,0.2)] hover:-translate-y-1 transition-all duration-500 border border-[#EAE0C8] active:scale-95"
                     >
                         Read All 149+ 5-Star Reviews
-                        <div className="w-8 h-8 rounded-full bg-[#FAFAFA] border border-[#EAE0C8] flex items-center justify-center group-hover:bg-[#C5A059] group-hover:border-[#C5A059] transition-colors duration-500">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#A3803B] group-hover:text-white transition-colors duration-500 group-hover:translate-x-0.5 transition-transform"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <div className="w-8 h-8 rounded-full bg-[#FAFAFA] border border-[#EAE0C8] flex items-center justify-center group-hover:bg-[#D6C2A4] group-hover:border-[#D6C2A4] transition-colors duration-500">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#C0A785] group-hover:text-white transition-colors duration-500 group-hover:translate-x-0.5 transition-transform"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
                     </a>
                 </FadeUp>
@@ -1137,11 +1137,11 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                 <FadeUp>
                   <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-extralight text-white mb-6 md:mb-8 tracking-wide leading-tight drop-shadow-xl">
                       {content.acadHeroTitle}<br/>
-                      <span className="font-light italic text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#E3C982] to-[#008B8B] drop-shadow-[0_0_15px_rgba(0,206,203,0.4)]">{content.acadHeroTitle2}</span>
+                      <span className="font-light italic text-transparent bg-clip-text bg-gradient-to-r from-[#D6C2A4] via-[#E3D5BE] to-[#D6C2A4] drop-shadow-[0_0_15px_rgba(0,206,203,0.4)]">{content.acadHeroTitle2}</span>
                   </h2>
                 </FadeUp>
                 <FadeUp delay={0.2}>
-                  <p className="text-[#C5A059] text-[9px] md:text-xs uppercase tracking-[0.3em] font-bold drop-shadow-[0_0_8px_rgba(0,206,203,0.5)]">
+                  <p className="text-[#D6C2A4] text-[9px] md:text-xs uppercase tracking-[0.3em] font-bold drop-shadow-[0_0_8px_rgba(0,206,203,0.5)]">
                       {content.acadHeroSub}
                   </p>
                 </FadeUp>
@@ -1150,44 +1150,44 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
             <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 w-full items-center">
                 
                 <FadeUp delay={0.1} className="h-full">
-                  <div className="p-8 md:p-12 flex flex-col h-full bg-[#111111]/80 backdrop-blur-2xl rounded-[2.5rem] border border-[#C5A059]/30 hover:border-[#C5A059] hover:bg-[#181614] shadow-2xl hover:shadow-[0_0_40px_rgba(0,206,203,0.15)] transition-all duration-500 relative group">
-                      <h3 className="text-2xl md:text-3xl font-serif text-white mb-6 group-hover:text-[#E3C982] transition-colors">{content.acadCard1Title}</h3>
-                      <div className="w-12 h-px bg-[#C5A059] mb-6 md:mb-8 group-hover:w-24 transition-all duration-700 ease-out shadow-[0_0_10px_#C5A059]"></div>
+                  <div className="p-8 md:p-12 flex flex-col h-full bg-[#111111]/80 backdrop-blur-2xl rounded-[2.5rem] border border-[#D6C2A4]/30 hover:border-[#D6C2A4] hover:bg-[#181614] shadow-2xl hover:shadow-[0_0_40px_rgba(0,206,203,0.15)] transition-all duration-500 relative group">
+                      <h3 className="text-2xl md:text-3xl font-serif text-white mb-6 group-hover:text-[#E3D5BE] transition-colors">{content.acadCard1Title}</h3>
+                      <div className="w-12 h-px bg-[#D6C2A4] mb-6 md:mb-8 group-hover:w-24 transition-all duration-700 ease-out shadow-[0_0_10px_#D6C2A4]"></div>
                       <p className="text-gray-300 text-xs md:text-sm font-light tracking-[0.05em] leading-relaxed flex-grow mb-10 md:mb-12">
                           {content.acadCard1Hook}
                       </p>
-                      <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-max border border-[#C5A059]/50 text-[#E3C982] py-4 px-8 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold text-center hover:bg-gradient-to-r hover:from-[#C5A059] hover:to-[#008B8B] hover:text-[#1A1A1A] hover:border-transparent transition-all mt-auto active:scale-95 shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_30px_rgba(0,206,203,0.5)]">
+                      <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-max border border-[#D6C2A4]/50 text-[#E3D5BE] py-4 px-8 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold text-center hover:bg-gradient-to-r hover:from-[#D6C2A4] hover:to-[#D6C2A4] hover:text-[#1A1A1A] hover:border-transparent transition-all mt-auto active:scale-95 shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_30px_rgba(0,206,203,0.5)]">
                           {content.acadBtn}
                       </a>
                   </div>
                 </FadeUp>
 
                 <FadeUp delay={0.3} className="h-full">
-                  <div className="p-8 md:p-12 flex flex-col h-full bg-[#111111]/80 backdrop-blur-2xl rounded-[2.5rem] border border-[#C5A059]/30 hover:border-[#C5A059] hover:bg-[#181614] shadow-2xl hover:shadow-[0_0_40px_rgba(0,206,203,0.15)] transition-all duration-500 relative group">
-                      <h3 className="text-2xl md:text-3xl font-serif text-white mb-2 group-hover:text-[#E3C982] transition-colors">{content.acadCard2Title}</h3>
-                      <span className="text-[#C5A059] font-light text-xl mb-6 tracking-wide block drop-shadow-[0_0_5px_rgba(0,206,203,0.3)]">{content.acadCard2Price}</span>
-                      <div className="w-12 h-px bg-[#C5A059] mb-6 md:mb-8 group-hover:w-24 transition-all duration-700 ease-out shadow-[0_0_10px_#C5A059]"></div>
+                  <div className="p-8 md:p-12 flex flex-col h-full bg-[#111111]/80 backdrop-blur-2xl rounded-[2.5rem] border border-[#D6C2A4]/30 hover:border-[#D6C2A4] hover:bg-[#181614] shadow-2xl hover:shadow-[0_0_40px_rgba(0,206,203,0.15)] transition-all duration-500 relative group">
+                      <h3 className="text-2xl md:text-3xl font-serif text-white mb-2 group-hover:text-[#E3D5BE] transition-colors">{content.acadCard2Title}</h3>
+                      <span className="text-[#D6C2A4] font-light text-xl mb-6 tracking-wide block drop-shadow-[0_0_5px_rgba(0,206,203,0.3)]">{content.acadCard2Price}</span>
+                      <div className="w-12 h-px bg-[#D6C2A4] mb-6 md:mb-8 group-hover:w-24 transition-all duration-700 ease-out shadow-[0_0_10px_#D6C2A4]"></div>
                       <p className="text-gray-300 text-xs md:text-sm font-light tracking-[0.05em] leading-relaxed flex-grow mb-10 md:mb-12">
                           {content.acadCard2Hook}
                       </p>
-                      <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-max border border-[#C5A059]/50 text-[#E3C982] py-4 px-8 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold text-center hover:bg-gradient-to-r hover:from-[#C5A059] hover:to-[#008B8B] hover:text-[#1A1A1A] hover:border-transparent transition-all mt-auto active:scale-95 shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_30px_rgba(0,206,203,0.5)]">
+                      <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-max border border-[#D6C2A4]/50 text-[#E3D5BE] py-4 px-8 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold text-center hover:bg-gradient-to-r hover:from-[#D6C2A4] hover:to-[#D6C2A4] hover:text-[#1A1A1A] hover:border-transparent transition-all mt-auto active:scale-95 shadow-[0_0_15px_rgba(0,206,203,0.1)] hover:shadow-[0_0_30px_rgba(0,206,203,0.5)]">
                           {content.acadBtn}
                       </a>
                   </div>
                 </FadeUp>
 
                 <FadeUp delay={0.5} className="h-full">
-                  <div className="p-8 md:p-12 flex flex-col h-full bg-[#1A1815]/90 backdrop-blur-3xl rounded-[2.5rem] border-2 border-[#C5A059] shadow-[0_0_50px_rgba(0,206,203,0.2)] hover:shadow-[0_0_70px_rgba(0,206,203,0.4)] transition-all duration-500 relative group lg:-translate-y-4">
-                      <div className="absolute top-4 right-4 md:-top-3 md:left-1/2 md:-translate-x-1/2 bg-gradient-to-r from-[#C5A059] to-[#E3C982] text-[#1A1A1A] px-4 md:px-5 py-1.5 md:py-1 rounded-full text-[8px] font-bold tracking-[0.3em] uppercase shadow-[0_0_15px_rgba(0,206,203,0.6)] whitespace-nowrap z-20">
+                  <div className="p-8 md:p-12 flex flex-col h-full bg-[#1A1815]/90 backdrop-blur-3xl rounded-[2.5rem] border-2 border-[#D6C2A4] shadow-[0_0_50px_rgba(0,206,203,0.2)] hover:shadow-[0_0_70px_rgba(0,206,203,0.4)] transition-all duration-500 relative group lg:-translate-y-4">
+                      <div className="absolute top-4 right-4 md:-top-3 md:left-1/2 md:-translate-x-1/2 bg-gradient-to-r from-[#D6C2A4] to-[#E3D5BE] text-[#1A1A1A] px-4 md:px-5 py-1.5 md:py-1 rounded-full text-[8px] font-bold tracking-[0.3em] uppercase shadow-[0_0_15px_rgba(0,206,203,0.6)] whitespace-nowrap z-20">
                           Recommended
                       </div>
-                      <h3 className="text-2xl md:text-3xl font-serif text-[#E3C982] mb-2 pr-16 md:pr-0 md:mt-4 relative z-10 drop-shadow-[0_0_8px_rgba(0,206,203,0.4)]">{content.acadCard3Title}</h3>
-                      <span className="text-[#C5A059] font-light text-xl mb-6 tracking-wide relative z-10 block">{content.acadCard3Price}</span>
-                      <div className="w-12 h-px bg-[#C5A059] mb-6 md:mb-8 relative z-10 group-hover:w-full transition-all duration-700 ease-out shadow-[0_0_10px_#C5A059]"></div>
+                      <h3 className="text-2xl md:text-3xl font-serif text-[#E3D5BE] mb-2 pr-16 md:pr-0 md:mt-4 relative z-10 drop-shadow-[0_0_8px_rgba(0,206,203,0.4)]">{content.acadCard3Title}</h3>
+                      <span className="text-[#D6C2A4] font-light text-xl mb-6 tracking-wide relative z-10 block">{content.acadCard3Price}</span>
+                      <div className="w-12 h-px bg-[#D6C2A4] mb-6 md:mb-8 relative z-10 group-hover:w-full transition-all duration-700 ease-out shadow-[0_0_10px_#D6C2A4]"></div>
                       <p className="text-white/90 text-xs md:text-sm font-light tracking-[0.05em] leading-relaxed flex-grow mb-10 md:mb-12 relative z-10">
                           {content.acadCard3Hook}
                       </p>
-                      <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-max bg-gradient-to-r from-[#C5A059] to-[#008B8B] text-[#1A1A1A] py-4 px-8 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold text-center hover:shadow-[0_0_30px_rgba(0,206,203,0.7)] transition-all relative z-10 shadow-[0_0_20px_rgba(0,206,203,0.4)] active:scale-95 border border-[#E3C982]/30">
+                      <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="block md:inline-block w-full md:w-max bg-gradient-to-r from-[#D6C2A4] to-[#D6C2A4] text-[#1A1A1A] py-4 px-8 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold text-center hover:shadow-[0_0_30px_rgba(0,206,203,0.7)] transition-all relative z-10 shadow-[0_0_20px_rgba(0,206,203,0.4)] active:scale-95 border border-[#E3D5BE]/30">
                           {content.acadBtn}
                       </a>
                   </div>
@@ -1208,7 +1208,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                         <FadeUp className="flex flex-col items-start text-left mb-10 md:mb-12">
                             <div className="flex items-center gap-6 mb-6">
                                 <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="group shrink-0">
-                                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-full p-[2px] bg-[#EAE0C8] group-hover:bg-[#C5A059] group-hover:scale-105 transition-all duration-500">
+                                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-full p-[2px] bg-[#EAE0C8] group-hover:bg-[#D6C2A4] group-hover:scale-105 transition-all duration-500">
                                         <div className="w-full h-full rounded-full p-[3px] bg-white">
                                             <img src="/instaprofile.jpg" alt="Naples Permanent Makeup" className="w-full h-full object-cover rounded-full" />
                                         </div>
@@ -1218,7 +1218,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                                     <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl text-[#2A2A2A] mb-2">{content.instaTitle}</h3>
                                     <p className="text-gray-500 text-[10px] md:text-sm tracking-[0.1em] font-light leading-relaxed">
                                         {content.instaSub} <br className="hidden xl:block" />
-                                        <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="text-[#A3803B] hover:text-[#2A2A2A] transition-colors font-bold">@naplespermanentmakeup</a>
+                                        <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="text-[#C0A785] hover:text-[#2A2A2A] transition-colors font-bold">@naplespermanentmakeup</a>
                                     </p>
                                 </div>
                             </div>
@@ -1240,7 +1240,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                         </FadeUp>
                         
                         <FadeUp delay={0.4} className="w-full mt-8 md:mt-12">
-                            <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full md:w-max items-center justify-center bg-[#2A2A2A] text-white hover:bg-[#C5A059] hover:text-[#1A1A1A] px-10 py-4 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold transition-all duration-300 shadow-md md:hover:-translate-y-0.5 active:scale-95 md:active:scale-100">
+                            <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full md:w-max items-center justify-center bg-[#2A2A2A] text-white hover:bg-[#D6C2A4] hover:text-[#1A1A1A] px-10 py-4 rounded-[1.5rem] md:rounded-full text-[9px] uppercase tracking-[0.3em] font-bold transition-all duration-300 shadow-md md:hover:-translate-y-0.5 active:scale-95 md:active:scale-100">
                                 Follow The Journey
                             </a>
                         </FadeUp>
@@ -1250,9 +1250,9 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                     <div className="flex flex-col h-full lg:pl-8 xl:pl-12">
                         <FadeUp>
                             <div className="mb-10 p-8 rounded-[2.5rem] bg-[#FAFAFA] border border-[#EAE0C8] shadow-sm relative overflow-hidden group">
-                                <div className="absolute top-0 left-0 w-1 h-full bg-[#C5A059] opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                                <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#A3803B] mb-4">Direct Contact</span>
-                                <a href="tel:2392492259" className="block text-3xl md:text-4xl font-serif text-[#2A2A2A] hover:text-[#A3803B] transition-colors mb-4">239-249-2259</a>
+                                <div className="absolute top-0 left-0 w-1 h-full bg-[#D6C2A4] opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#C0A785] mb-4">Direct Contact</span>
+                                <a href="tel:2392492259" className="block text-3xl md:text-4xl font-serif text-[#2A2A2A] hover:text-[#C0A785] transition-colors mb-4">239-249-2259</a>
                                 <p className="text-gray-500 text-sm font-light tracking-[0.05em] leading-relaxed">
                                     10661 Airport Pulling Road, Suite 16<br/>Naples, Florida 34109
                                 </p>
@@ -1287,7 +1287,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
               
               {/* Massive Ambient Background Typography */}
               <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none overflow-hidden z-0">
-                  <h1 className="text-[25vw] font-serif font-black text-[#C5A059] tracking-tighter whitespace-nowrap">SOUL</h1>
+                  <h1 className="text-[25vw] font-serif font-black text-[#D6C2A4] tracking-tighter whitespace-nowrap">SOUL</h1>
               </div>
 
               <div ref={footerRef} className="w-full flex flex-col justify-end text-white relative z-10">
@@ -1295,7 +1295,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                   <div className="max-w-[1400px] mx-auto w-full pt-12 pb-10 md:pt-24 md:pb-16 px-6 lg:px-12 mt-auto relative z-10">
                       
                       <div className="text-center mb-10 md:mb-24 relative">
-                          <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#C5A059]/20 to-transparent -z-10"></div>
+                          <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D6C2A4]/20 to-transparent -z-10"></div>
                           <div className="inline-block px-8 bg-[#050505]">
                               <img src="/logo.png" alt="Naples Permanent Makeup" className="h-16 md:h-20 mx-auto object-contain drop-shadow-[0_0_15px_rgba(48,213,200,0.2)]" />
                           </div>
@@ -1304,37 +1304,37 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                       <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-10 lg:gap-8">
                           
                           <div className="flex flex-col">
-                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#C5A059] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftGetInTouch}</span>
-                              <a href="tel:2392492259" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-2 md:mb-3 transition-colors">239-249-2259</a>
-                              <a href="mailto:contact@naplespermanentmakeup.com" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-4 md:mb-6 transition-colors break-words">contact@naplespermanentmakeup.com</a>
+                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#D6C2A4] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftGetInTouch}</span>
+                              <a href="tel:2392492259" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-2 md:mb-3 transition-colors">239-249-2259</a>
+                              <a href="mailto:contact@naplespermanentmakeup.com" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-4 md:mb-6 transition-colors break-words">contact@naplespermanentmakeup.com</a>
                               <span className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-500 leading-loose">
                                   {content.ftDaily}<br/>{content.ftAppt}
                               </span>
                           </div>
 
                           <div className="flex flex-col">
-                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#C5A059] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftStudio}</span>
+                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#D6C2A4] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftStudio}</span>
                               <ul className="flex flex-col">
-                                  <a href="#services" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.navServices}</a>
-                                  <a href="#masterpieces" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.navPortfolio}</a>
-                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.ftAbout}</a>
-                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.ftArtists}</a>
-                                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] transition-colors">{content.ftConsult}</a>
+                                  <a href="#services" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.navServices}</a>
+                                  <a href="#masterpieces" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.navPortfolio}</a>
+                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.ftAbout}</a>
+                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.ftArtists}</a>
+                                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] transition-colors">{content.ftConsult}</a>
                               </ul>
                           </div>
 
                           <div className="flex flex-col">
-                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#C5A059] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftAcademy}</span>
+                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#D6C2A4] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftAcademy}</span>
                               <ul className="flex flex-col">
-                                  <a href="#academy" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.ftEnroll}</a>
-                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.ftCurr}</a>
-                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] mb-3 transition-colors">{content.ftShop}</a>
-                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3C982] transition-colors">{content.ftSupport}</a>
+                                  <a href="#academy" onClick={(e) => { e.preventDefault(); setShowPreviewModal(true); }} className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.ftEnroll}</a>
+                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.ftCurr}</a>
+                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] mb-3 transition-colors">{content.ftShop}</a>
+                                  <a href="#" className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 hover:text-[#E3D5BE] transition-colors">{content.ftSupport}</a>
                               </ul>
                           </div>
 
                           <div className="flex flex-col lg:col-span-1 pr-0 lg:pr-8">
-                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#C5A059] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftLocation}</span>
+                              <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#D6C2A4] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftLocation}</span>
                               <p className="text-[10px] md:text-xs font-light tracking-[0.05em] text-gray-400 leading-loose">
                                   3740 Coors Blvd NW Suite B<br/>Naples, NM 87120
                               </p>
@@ -1342,20 +1342,20 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
 
                           <div className="flex flex-col justify-between items-start lg:items-end col-span-2 lg:col-span-1 mt-2 lg:mt-0 relative z-20">
                               <div className="flex flex-col items-start lg:items-end w-full">
-                                  <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#C5A059] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftFollow}</span>
+                                  <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-bold mb-4 md:mb-6 text-[#D6C2A4] drop-shadow-[0_0_8px_rgba(48,213,200,0.4)]">{content.ftFollow}</span>
                                   <div className="flex gap-4 w-full lg:justify-end mt-1">
                                       {/* Social Links */}
-                                      <a href="https://www.facebook.com/103246482755577" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#E3C982] hover:drop-shadow-[0_0_10px_rgba(48,213,200,0.6)] transition-all duration-300">
+                                      <a href="https://www.facebook.com/103246482755577" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#E3D5BE] hover:drop-shadow-[0_0_10px_rgba(48,213,200,0.6)] transition-all duration-300">
                                           <svg width="22" height="22" viewBox="0 0 512 512" fill="currentColor">
                                               <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
                                           </svg>
                                       </a>
-                                      <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#E3C982] hover:drop-shadow-[0_0_10px_rgba(48,213,200,0.6)] transition-all duration-300">
+                                      <a href="https://www.instagram.com/naplespermanentmakeup/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#E3D5BE] hover:drop-shadow-[0_0_10px_rgba(48,213,200,0.6)] transition-all duration-300">
                                           <svg width="22" height="22" viewBox="0 0 448 512" fill="currentColor">
                                               <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                                           </svg>
                                       </a>
-                                      <a href="https://www.yelp.com/biz/naples-permanent-makeup-naples" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#E3C982] hover:drop-shadow-[0_0_10px_rgba(48,213,200,0.6)] transition-all duration-300">
+                                      <a href="https://www.yelp.com/biz/naples-permanent-makeup-naples" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#E3D5BE] hover:drop-shadow-[0_0_10px_rgba(48,213,200,0.6)] transition-all duration-300">
                                           <svg width="22" height="22" viewBox="0 0 384 512" fill="currentColor">
                                               <path d="M110.1 217.4c17.5 7 35.2-11.5 35.2-11.5 5.5-5.9 7-15.6 2.3-22.4L78 86.8c-26-38.6-67-15-77-7.8-13 10-15 41-1.6 63.6 9 14.5 97.4 69.3 110.7 74.8zm114.7-19.8c-18.7-2.6-32.8 18.6-32.8 18.6-3.8 6.5-1.5 16 5.8 20L319 313.5c41 23 72.8 12.3 83.3 2.6 14-13.6 8.5-44.5-9-63.5-11-13-113.8-51.5-168.5-55zm-143.2 46c-18.8 1.4-15 28.5-15 28.5 2 7 9.8 11.8 16 12l132.6 12c46.7 4 47-38 46.5-47-1-18-20-47.5-62.5-44.4-44.8 3.5-117.6-1.1-117.6-1.1zM286.2 384c-12-14-36.4 7-36.4 7-6 5.3-7.5 15-3 21.8l77 121c27.5 43.6 70.8 18.7 81 10.6 13.5-10.4 15-42.5.5-66.5-9.2-15-107.1-79.9-119.1-93.9zM100.8 359c-14.7-10.8-31 16-31 16-5.8 5.7-5.5 15.6.8 21.6L166 492.2c35 34.6 74 6 82.5-3.6 11-12.7 4-43-13.5-64.6-10.8-14-119.5-54.2-134.2-65z"/>
                                           </svg>
@@ -1365,7 +1365,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                               
                               <button 
                                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                                  className="flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-[#C5A059] hover:text-[#050505] transition-colors mt-8 lg:mt-auto border border-[#C5A059]/40 px-6 py-2 rounded-full bg-transparent hover:bg-gradient-to-r hover:from-[#C5A059] hover:to-[#E3C982] hover:border-transparent group shadow-[0_0_10px_rgba(48,213,200,0.1)]"
+                                  className="flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-[#D6C2A4] hover:text-[#050505] transition-colors mt-8 lg:mt-auto border border-[#D6C2A4]/40 px-6 py-2 rounded-full bg-transparent hover:bg-gradient-to-r hover:from-[#D6C2A4] hover:to-[#E3D5BE] hover:border-transparent group shadow-[0_0_10px_rgba(48,213,200,0.1)]"
                               >
                                   {content.ftTop}
                                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="group-hover:-translate-y-0.5 transition-transform">
@@ -1377,7 +1377,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                       </div>
                   </div>
 
-                  <div className="bg-[#0A0A0A] py-4 md:py-8 px-4 lg:px-12 border-t border-[#C5A059]/10 w-full shrink-0 relative z-10 shadow-[inset_0_20px_40px_rgba(0,0,0,0.5)]">
+                  <div className="bg-[#0A0A0A] py-4 md:py-8 px-4 lg:px-12 border-t border-[#D6C2A4]/10 w-full shrink-0 relative z-10 shadow-[inset_0_20px_40px_rgba(0,0,0,0.5)]">
                       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center text-[6px] md:text-[8px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-gray-600 gap-3 md:gap-6">
                           <span className="text-center md:text-left">© {new Date().getFullYear()} NAPLES PERMANENT MAKEUP BEAUTY. ALL RIGHTS RESERVED.</span>
                           
@@ -1386,20 +1386,20 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
                               {/* Grouped for Mobile: Terms, Privacy, and Language Switcher on one line */}
                               <div className="flex items-center justify-center gap-4 md:gap-8 w-full md:w-auto">
                                   <div className="flex gap-3 md:gap-4">
-                                    <a href="#" className="hover:text-[#C5A059] transition-colors">{content.ftTerms}</a>
-                                    <a href="#" className="hover:text-[#C5A059] transition-colors">{content.ftPrivacy}</a>
+                                    <a href="#" className="hover:text-[#D6C2A4] transition-colors">{content.ftTerms}</a>
+                                    <a href="#" className="hover:text-[#D6C2A4] transition-colors">{content.ftPrivacy}</a>
                                   </div>
                                   
-                                  <div className="flex items-center gap-2 text-[7px] md:text-[8px] tracking-widest font-bold border border-[#C5A059]/20 bg-[#111] px-2.5 py-1 md:px-3 md:py-1.5 rounded-full shadow-inner">
-                                     <button onClick={() => handleLangChange('EN')} className={`transition-colors ${lang === 'EN' ? 'text-[#E3C982] drop-shadow-[0_0_5px_rgba(48,213,200,0.5)]' : 'text-gray-500 hover:text-[#C5A059]'}`}>EN</button>
+                                  <div className="flex items-center gap-2 text-[7px] md:text-[8px] tracking-widest font-bold border border-[#D6C2A4]/20 bg-[#111] px-2.5 py-1 md:px-3 md:py-1.5 rounded-full shadow-inner">
+                                     <button onClick={() => handleLangChange('EN')} className={`transition-colors ${lang === 'EN' ? 'text-[#E3D5BE] drop-shadow-[0_0_5px_rgba(48,213,200,0.5)]' : 'text-gray-500 hover:text-[#D6C2A4]'}`}>EN</button>
                                      <span className="text-gray-700">/</span>
-                                     <button onClick={() => handleLangChange('ES')} className={`transition-colors ${lang === 'ES' ? 'text-[#E3C982] drop-shadow-[0_0_5px_rgba(48,213,200,0.5)]' : 'text-gray-500 hover:text-[#C5A059]'}`}>ES</button>
+                                     <button onClick={() => handleLangChange('ES')} className={`transition-colors ${lang === 'ES' ? 'text-[#E3D5BE] drop-shadow-[0_0_5px_rgba(48,213,200,0.5)]' : 'text-gray-500 hover:text-[#D6C2A4]'}`}>ES</button>
                                   </div>
                               </div>
                               
                               <span className="flex items-center gap-1.5 whitespace-nowrap mt-1 md:mt-0">
                                   INFRASTRUCTURE ENGINEERED BY 
-                                  <a href="https://www.vireva.agency/" target="_blank" rel="noopener noreferrer" className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#E3C982] to-[#008B8B] font-black tracking-widest text-[8px] md:text-[9px] hover:drop-shadow-[0_0_10px_rgba(0,206,203,0.8)] transition-all duration-300 ml-0.5">
+                                  <a href="https://www.vireva.agency/" target="_blank" rel="noopener noreferrer" className="text-transparent bg-clip-text bg-gradient-to-r from-[#D6C2A4] via-[#E3D5BE] to-[#D6C2A4] font-black tracking-widest text-[8px] md:text-[9px] hover:drop-shadow-[0_0_10px_rgba(0,206,203,0.8)] transition-all duration-300 ml-0.5">
                                       VIREVA
                                   </a>
                               </span>
@@ -1422,26 +1422,23 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
             onClick={() => setShowPreviewModal(false)}
           >
             <div 
-               className="relative max-w-md w-full bg-[#111111]/80 backdrop-blur-xl border border-[#C5A059]/30 rounded-3xl p-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden"
+               className="relative max-w-[340px] md:max-w-sm w-full bg-white/70 backdrop-blur-3xl border border-white/50 rounded-[32px] p-8 shadow-[0_30px_60px_rgba(0,0,0,0.12)] overflow-hidden mx-auto"
                onClick={e => e.stopPropagation()}
             >
-               <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#C5A059]/20 blur-[30px] rounded-full mix-blend-screen pointer-events-none"></div>
-               <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-[#E3C982]/10 blur-[20px] rounded-full mix-blend-screen pointer-events-none"></div>
-               
                <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full border border-[#C5A059]/50 flex items-center justify-center mb-6 bg-white/5">
-                     <svg className="w-6 h-6 text-[#C5A059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-14 h-14 rounded-full bg-black/5 flex items-center justify-center mb-5">
+                     <svg className="w-7 h-7 text-[#1c1c1e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                      </svg>
                   </div>
-                  <h3 className="text-xl font-serif text-[#F9F6F0] mb-4">Preview Mode Active</h3>
-                  <p className="text-sm font-light text-gray-400 leading-relaxed mb-8">
-                     This section is currently part of a private homepage preview and hasn’t been fully developed yet. 
-                     For now, only the homepage experience is active so you can focus on the overall direction, branding, and feel of the redesign.
+                  <h3 className="text-[22px] font-medium tracking-tight text-[#1c1c1e] mb-3">Preview Mode</h3>
+                  <p className="text-[15px] font-normal text-[#1c1c1e]/70 leading-[1.4] mb-8">
+                     This section is part of a private homepage preview and hasn’t been developed yet. 
+                     For now, only the homepage is active to review the overall direction and branding.
                   </p>
                   <button 
                      onClick={() => setShowPreviewModal(false)}
-                     className="w-full py-3.5 bg-gradient-to-r from-[#C5A059] to-[#D4AF37] text-[#1A1A1A] font-bold uppercase tracking-widest text-[10px] rounded-full hover:shadow-[0_0_15px_rgba(197,160,89,0.4)] transition-all duration-300"
+                     className="w-full py-4 bg-[#1c1c1e] text-white font-medium text-[15px] rounded-2xl hover:scale-[0.98] transition-transform duration-200"
                   >
                      Got it
                   </button>

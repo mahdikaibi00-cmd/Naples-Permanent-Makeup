@@ -16,17 +16,17 @@ const serif = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Skin & Soul Beauty | Advanced Esthetics & Cosmetic Tattooing in Albuquerque",
-  description: "Skin and Soul Beauty is an Albuquerque based spa specializing in advanced esthetic treatments and cosmetic tattooing. Experience customized facials, permanent makeup, and luxury skincare designed to make you glow from the inside out.",
+  title: "Naples Permanent Makeup | Master-Level Esthetics & Cosmetic Tattooing in Naples, FL",
+  description: "Naples Permanent Makeup is a luxury beauty studio in Naples, FL specializing in advanced esthetic treatments, permanent makeup, and lip blush. Wake up every day looking effortlessly glamorous with master artist Laura.",
   keywords: [
-    "Skin & Soul Beauty",
-    "Rachael Esthetician",
-    "Permanent Makeup Albuquerque", 
-    "Cosmetic Tattooing NM", 
-    "Advanced Esthetics Albuquerque", 
-    "Microblading Albuquerque", 
+    "Naples Permanent Makeup",
+    "Laura Permanent Makeup Artist",
+    "Permanent Makeup Naples FL", 
+    "Cosmetic Tattooing Florida", 
+    "Advanced Esthetics Naples", 
+    "Microblading Naples", 
     "Lip Blush Tattoo",
-    "Luxury Spa NM"
+    "Luxury Spa Naples FL"
   ],
 };
 
