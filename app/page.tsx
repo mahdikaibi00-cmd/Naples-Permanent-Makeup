@@ -447,7 +447,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         {/* Background Layer */}
         <div className="absolute inset-0 z-0 bg-[#1A1A1A]">
           <video src="/v1hero.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover object-center opacity-60 sepia-[0.2]" />
-          <div className="absolute inset-0 bg-black/70 z-10"></div>
+          <div className="absolute inset-0 bg-black/30 z-10"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.7)_100%)] z-10 opacity-90 pointer-events-none"></div>
         </div>
 
